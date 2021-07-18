@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #222736;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Padauk', sans-serif;
+}
+/*side bar css*/
+.sidebar{
+    overflow: auto;
+}
+.sidebar::after{
+    scroll-behavior: auto;
+}
+.sidebar hr{
+    margin: 12px 0 !important;
+    overflow: auto;
+}
+.open-sidebar{
+    margin-left: 0 !important;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-item{
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 5px;
+}
+.menu-item:hover{
+    background-color: #6c757d;
+}
+.menu-item.active{
+    background-color: #6c757d;
+}
+.menu-item a{
+    text-decoration: none;
+}
+.menu-item span i{
+    font-size: 1.5rem;
+    margin-left: 3px;
+}
+.spacer{
+    height: 15px;
+}
+/*side bar css end*/
+/*main content css*/
+.show-searchForm{
+    top: 80px!important;
+}
+.content{
+    overflow: auto;
+    background-color: #222736;
+}
+.nav-bar{
+    position: sticky;
+    z-index: 2000;
+    top: 0;
+}
+.dropdown img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.card-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.cUp-icon{
+    font-size: 3rem;
+    color: #556ee6;;
+}
+
+.signup-icon{
+    font-size: 25px;
+    border: 1px solid #222736;
+    padding: 0.2rem;
+    border-radius: 50%;
+    background-color: #222736;
+    cursor: pointer;
+}
+.signup-icon:hover{
+    background-color: #556ee6;
+}
+tr{
+    transition: 0.3s;
+    vertical-align: central;
+}
+tr:hover{
+    background-color: #556ee6;
+    cursor: pointer;
+    user-select: none;
+}
+tr:active{
+    transform: scale(1.05);
+}
+
+/*side bar media query*/
+@media screen and (max-width: 990px) {
+    .sidebar{
+        position: fixed;
+        width: 300px;
+        z-index: 2001;
+        margin-left: -100%;
+    }
+    .search-form{
+        position: absolute;
+        top: -80px;
+        width: 100%;
+        left: 0;
+        z-index: 2001;
+        background-color: #222736;
+        display: block !important;
+    }
+}
+@media screen and (max-width: 475px) {
+    .main-footer{
+        display: block!important;
+        text-align: center;
+    }
+    .title{
+        display: block!important;
+    }
+}
