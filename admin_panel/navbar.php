@@ -22,7 +22,7 @@ if (empty($_SESSION['user_id']) || empty($_SESSION['logged_in'])){
                 </div>
                 <div class="dropdown">
                     <button class="btn bg-button dropdown-toggle text-white" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets/images/user/avatar1.jpg" alt="">
+                        <img src="assets/images/<?php echo $_SESSION['user_image']; ?>" alt="">
                         <span>
                             <?php echo $_SESSION['user_name'];?>
                         </span>

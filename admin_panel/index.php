@@ -26,10 +26,10 @@ if (empty($_SESSION['user_id']) || empty($_SESSION['logged_in'])){
             <div class="card bg-blue mb-2">
                 <div class="card-body">
                     <div class="text-center">
-                        <img src="assets/images/user/avatar1.jpg" class="card-image" alt="">
+                        <img src="assets/images/<?php echo $_SESSION['user_image']; ?>" class="card-image" alt="">
                     </div>
                     <h3 class="text-center">Welcome Admin</h3>
-                    <a href="profile.html" class="text-decoration-none text-white btn btn-sm bg-button w-100">Go to Profile <i class="feather-arrow-right mb-0"></i></a>
+                    <a href="my_profile.php" class="text-decoration-none text-white btn btn-sm bg-button w-100">Go to Profile <i class="feather-arrow-right mb-0"></i></a>
                 </div>
             </div>
             <div class="card bg-blue mb-2">
@@ -40,7 +40,7 @@ if (empty($_SESSION['user_id']) || empty($_SESSION['logged_in'])){
                         <span class="counter">5</span>
                         <span>Categories</span>
                     </h3>
-                    <a href="category.html" class="text-decoration-none text-white btn btn-sm bg-button w-100">Go to check <i class="feather-arrow-right mb-0"></i></a>
+                    <a href="category_list.php" class="text-decoration-none text-white btn btn-sm bg-button w-100">Go to check <i class="feather-arrow-right mb-0"></i></a>
                 </div>
             </div>
         </div>

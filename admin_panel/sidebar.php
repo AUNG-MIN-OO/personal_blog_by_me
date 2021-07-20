@@ -20,6 +20,12 @@
     <div class="menu">
         <ul class="m-0">
             <li class="d-flex justify-content-center align-items-center menu-item mb-2">
+                <span>
+                    <i class="feather-server me-3"></i>
+                </span>
+                <a href="../index.php" class="w-100 h5 text-white mb-0">Go to Website</a>
+            </li>
+            <li class="d-flex justify-content-center align-items-center menu-item mb-2">
                         <span>
                             <i class="feather-grid me-3"></i>
                         </span>

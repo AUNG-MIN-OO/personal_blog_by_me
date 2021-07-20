@@ -25,6 +25,7 @@
                 if ($user['email'] == $email && password_verify($password,$user['password'])){
                     $_SESSION['user_id'] = $user['id'];
                     $_SESSION['user_name'] = $user['name'];
+                    $_SESSION['user_image'] = $user['image'];
                     $_SESSION['logged_in'] = time();
                     header("location:index.php");
                 }
